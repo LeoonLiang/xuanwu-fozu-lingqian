@@ -7,13 +7,13 @@
   - 入口文件：`index.json`，包含全部签的文件列表（`files`）与计数（`count`）
   - 列表项路径格式：`data/NN.json`（如 `data/01.json`、`data/51.json`）
 - 原始文件（GitHub Raw）
-  - `https://raw.githubusercontent.com/<owner>/<repo>/<branch>/index.json`
-  - `https://raw.githubusercontent.com/<owner>/<repo>/<branch>/data/01.json`
-  - 将 `<owner>/<repo>/<branch>`替换为仓库信息即可直接请求 JSON
+  - `https://raw.githubusercontent.com/LeoonLiang/xuanwu-fozu-lingqian/main/index.json`
+  - `https://raw.githubusercontent.com/LeoonLiang/xuanwu-fozu-lingqian/main/data/01.json`
+  - 如默认分支非 `main`，将路径中的 `main` 替换为实际分支名
 - Web/Node 代码示例（按索引遍历）
 ```js
 // Node 18+ 或浏览器环境
-const base = "https://raw.githubusercontent.com/<owner>/<repo>/<branch>/";
+const base = "https://raw.githubusercontent.com/LeoonLiang/xuanwu-fozu-lingqian/main/";
 const index = await fetch(base + "index.json").then(r => r.json());
 const items = await Promise.all(
   index.files.map(f => fetch(base + f).then(r => r.json()))
@@ -21,7 +21,7 @@ const items = await Promise.all(
 console.log(index.count, items.length); // 51, 51
 ```
 - 可选：GitHub Pages
-  - 若开启 Pages，将根目录公开后，也可通过 `https://<owner>.github.io/<repo>/index.json` 读取
+  - 若开启 Pages，将根目录公开后，也可通过 `https://LeoonLiang.github.io/xuanwu-fozu-lingqian/index.json` 读取
 
 ## 目录结构
 - `data/`：51 个签的 JSON（`01.json`–`51.json`）

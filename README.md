@@ -50,8 +50,9 @@ console.log(allLite.length); // 51
     - `map`：按编号映射 `full` 与 `lite` 路径，便于串联请求
  - `data-lite/all.json`：简约版聚合文件，一次性获取 51 条简约数据
 - `schema.json`：字段结构的参考规范（JSON Schema，允许增量字段）
-- `scripts/validate.mjs`：轻量数据校验脚本（存在性与关键块检查）
-- `package.json`：运行脚本配置
+- `scripts/validate.mjs`：数据校验脚本（Schema 结构检查、文件存在性检查、图片关联检查）
+- `package.json`：运行脚本与包配置
+- `index.d.ts`：TypeScript 类型定义文件
 
 ## 数据结构
 - 每个签为一个对象，包含但不限于以下关键块：
@@ -62,12 +63,24 @@ console.log(allLite.length); // 51
   - 专题：`生意`、`出外`、`谋望求财`、`学艺功名`、`行舟六畜`、`移徙`、`行人`、`婚姻`、`官讼`、`失物`、`占病`、`其他`
 - 规范参考见：`schema.json`
 
+## TypeScript 支持
+本项目提供 TypeScript 类型定义，便于在 TS 项目中使用。
+
+```typescript
+import type { FortuneStick, Manifest } from 'xuanwu-fozu-lingqian';
+```
+
 ## 校验与开发
-- 运行轻量校验
+- 运行校验
+  - `npm install` 安装依赖
   - `npm run validate` 或 `node scripts/validate.mjs`
+  - 脚本会自动检查：
+    - JSON 文件存在性与格式
+    - 数据结构是否符合 `schema.json` (使用 Ajv 严格校验)
+    - 关联图片是否存在 (`image/ID_1.jpg`, `image/ID_2.jpg`)
   - 输出包含 `summary`（ok/warn/error）与逐文件 `results`
-- 严格 Schema 校验（可选）
-  - 如需按 `schema.json` 强校验（类型与结构），可扩展脚本接入 AJV 等库
+- CI/CD
+  - 本项目配置了 GitHub Actions (`.github/workflows/validate.yml`)，在 Push 或 PR 时自动运行校验脚本。
 
 ## 内容与图片来源
 - 本数据集的文字内容与配图均整理自“汕尾市玄武山旅游区”官方公众号

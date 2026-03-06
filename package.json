@@ -1,11 +1,38 @@
 {
   "name": "xuanwu-fozu-lingqian",
   "version": "1.0.0",
-  "private": true,
   "type": "module",
   "description": "玄武山佛祖灵签数据集（51签，每签一个 JSON）",
+  "main": "index.json",
+  "types": "index.d.ts",
+  "exports": {
+    ".": "./index.json",
+    "./data/*": "./data/*.json",
+    "./data-lite/*": "./data-lite/*.json",
+    "./package.json": "./package.json"
+  },
   "scripts": {
     "validate": "node scripts/validate.mjs",
-    "build:all-lite": "node scripts/build-all-lite.mjs"
+    "test": "npm run validate"
+  },
+  "keywords": [
+    "fortune",
+    "buddhist",
+    "lingqian",
+    "dataset",
+    "chouqian"
+  ],
+  "author": "LeoonLiang",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeoonLiang/xuanwu-fozu-lingqian.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LeoonLiang/xuanwu-fozu-lingqian/issues"
+  },
+  "homepage": "https://github.com/LeoonLiang/xuanwu-fozu-lingqian#readme",
+  "devDependencies": {
+    "ajv": "^8.17.1"
   }
 }

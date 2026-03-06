@@ -54,5 +54,318 @@
     "data/49.json",
     "data/50.json",
     "data/51.json"
+  ],
+  "lite": {
+    "count": 51,
+    "files": [
+      "data-lite/01.json",
+      "data-lite/02.json",
+      "data-lite/03.json",
+      "data-lite/04.json",
+      "data-lite/05.json",
+      "data-lite/06.json",
+      "data-lite/07.json",
+      "data-lite/08.json",
+      "data-lite/09.json",
+      "data-lite/10.json",
+      "data-lite/11.json",
+      "data-lite/12.json",
+      "data-lite/13.json",
+      "data-lite/14.json",
+      "data-lite/15.json",
+      "data-lite/16.json",
+      "data-lite/17.json",
+      "data-lite/18.json",
+      "data-lite/19.json",
+      "data-lite/20.json",
+      "data-lite/21.json",
+      "data-lite/22.json",
+      "data-lite/23.json",
+      "data-lite/24.json",
+      "data-lite/25.json",
+      "data-lite/26.json",
+      "data-lite/27.json",
+      "data-lite/28.json",
+      "data-lite/29.json",
+      "data-lite/30.json",
+      "data-lite/31.json",
+      "data-lite/32.json",
+      "data-lite/33.json",
+      "data-lite/34.json",
+      "data-lite/35.json",
+      "data-lite/36.json",
+      "data-lite/37.json",
+      "data-lite/38.json",
+      "data-lite/39.json",
+      "data-lite/40.json",
+      "data-lite/41.json",
+      "data-lite/42.json",
+      "data-lite/43.json",
+      "data-lite/44.json",
+      "data-lite/45.json",
+      "data-lite/46.json",
+      "data-lite/47.json",
+      "data-lite/48.json",
+      "data-lite/49.json",
+      "data-lite/50.json",
+      "data-lite/51.json"
+    ]
+  },
+  "map": [
+    {
+      "id": "01",
+      "full": "data/01.json",
+      "lite": "data-lite/01.json"
+    },
+    {
+      "id": "02",
+      "full": "data/02.json",
+      "lite": "data-lite/02.json"
+    },
+    {
+      "id": "03",
+      "full": "data/03.json",
+      "lite": "data-lite/03.json"
+    },
+    {
+      "id": "04",
+      "full": "data/04.json",
+      "lite": "data-lite/04.json"
+    },
+    {
+      "id": "05",
+      "full": "data/05.json",
+      "lite": "data-lite/05.json"
+    },
+    {
+      "id": "06",
+      "full": "data/06.json",
+      "lite": "data-lite/06.json"
+    },
+    {
+      "id": "07",
+      "full": "data/07.json",
+      "lite": "data-lite/07.json"
+    },
+    {
+      "id": "08",
+      "full": "data/08.json",
+      "lite": "data-lite/08.json"
+    },
+    {
+      "id": "09",
+      "full": "data/09.json",
+      "lite": "data-lite/09.json"
+    },
+    {
+      "id": "10",
+      "full": "data/10.json",
+      "lite": "data-lite/10.json"
+    },
+    {
+      "id": "11",
+      "full": "data/11.json",
+      "lite": "data-lite/11.json"
+    },
+    {
+      "id": "12",
+      "full": "data/12.json",
+      "lite": "data-lite/12.json"
+    },
+    {
+      "id": "13",
+      "full": "data/13.json",
+      "lite": "data-lite/13.json"
+    },
+    {
+      "id": "14",
+      "full": "data/14.json",
+      "lite": "data-lite/14.json"
+    },
+    {
+      "id": "15",
+      "full": "data/15.json",
+      "lite": "data-lite/15.json"
+    },
+    {
+      "id": "16",
+      "full": "data/16.json",
+      "lite": "data-lite/16.json"
+    },
+    {
+      "id": "17",
+      "full": "data/17.json",
+      "lite": "data-lite/17.json"
+    },
+    {
+      "id": "18",
+      "full": "data/18.json",
+      "lite": "data-lite/18.json"
+    },
+    {
+      "id": "19",
+      "full": "data/19.json",
+      "lite": "data-lite/19.json"
+    },
+    {
+      "id": "20",
+      "full": "data/20.json",
+      "lite": "data-lite/20.json"
+    },
+    {
+      "id": "21",
+      "full": "data/21.json",
+      "lite": "data-lite/21.json"
+    },
+    {
+      "id": "22",
+      "full": "data/22.json",
+      "lite": "data-lite/22.json"
+    },
+    {
+      "id": "23",
+      "full": "data/23.json",
+      "lite": "data-lite/23.json"
+    },
+    {
+      "id": "24",
+      "full": "data/24.json",
+      "lite": "data-lite/24.json"
+    },
+    {
+      "id": "25",
+      "full": "data/25.json",
+      "lite": "data-lite/25.json"
+    },
+    {
+      "id": "26",
+      "full": "data/26.json",
+      "lite": "data-lite/26.json"
+    },
+    {
+      "id": "27",
+      "full": "data/27.json",
+      "lite": "data-lite/27.json"
+    },
+    {
+      "id": "28",
+      "full": "data/28.json",
+      "lite": "data-lite/28.json"
+    },
+    {
+      "id": "29",
+      "full": "data/29.json",
+      "lite": "data-lite/29.json"
+    },
+    {
+      "id": "30",
+      "full": "data/30.json",
+      "lite": "data-lite/30.json"
+    },
+    {
+      "id": "31",
+      "full": "data/31.json",
+      "lite": "data-lite/31.json"
+    },
+    {
+      "id": "32",
+      "full": "data/32.json",
+      "lite": "data-lite/32.json"
+    },
+    {
+      "id": "33",
+      "full": "data/33.json",
+      "lite": "data-lite/33.json"
+    },
+    {
+      "id": "34",
+      "full": "data/34.json",
+      "lite": "data-lite/34.json"
+    },
+    {
+      "id": "35",
+      "full": "data/35.json",
+      "lite": "data-lite/35.json"
+    },
+    {
+      "id": "36",
+      "full": "data/36.json",
+      "lite": "data-lite/36.json"
+    },
+    {
+      "id": "37",
+      "full": "data/37.json",
+      "lite": "data-lite/37.json"
+    },
+    {
+      "id": "38",
+      "full": "data/38.json",
+      "lite": "data-lite/38.json"
+    },
+    {
+      "id": "39",
+      "full": "data/39.json",
+      "lite": "data-lite/39.json"
+    },
+    {
+      "id": "40",
+      "full": "data/40.json",
+      "lite": "data-lite/40.json"
+    },
+    {
+      "id": "41",
+      "full": "data/41.json",
+      "lite": "data-lite/41.json"
+    },
+    {
+      "id": "42",
+      "full": "data/42.json",
+      "lite": "data-lite/42.json"
+    },
+    {
+      "id": "43",
+      "full": "data/43.json",
+      "lite": "data-lite/43.json"
+    },
+    {
+      "id": "44",
+      "full": "data/44.json",
+      "lite": "data-lite/44.json"
+    },
+    {
+      "id": "45",
+      "full": "data/45.json",
+      "lite": "data-lite/45.json"
+    },
+    {
+      "id": "46",
+      "full": "data/46.json",
+      "lite": "data-lite/46.json"
+    },
+    {
+      "id": "47",
+      "full": "data/47.json",
+      "lite": "data-lite/47.json"
+    },
+    {
+      "id": "48",
+      "full": "data/48.json",
+      "lite": "data-lite/48.json"
+    },
+    {
+      "id": "49",
+      "full": "data/49.json",
+      "lite": "data-lite/49.json"
+    },
+    {
+      "id": "50",
+      "full": "data/50.json",
+      "lite": "data-lite/50.json"
+    },
+    {
+      "id": "51",
+      "full": "data/51.json",
+      "lite": "data-lite/51.json"
+    }
   ]
 }

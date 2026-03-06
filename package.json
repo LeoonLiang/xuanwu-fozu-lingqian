@@ -5,6 +5,7 @@
   "type": "module",
   "description": "玄武山佛祖灵签数据集（51签，每签一个 JSON）",
   "scripts": {
-    "validate": "node scripts/validate.mjs"
+    "validate": "node scripts/validate.mjs",
+    "build:all-lite": "node scripts/build-all-lite.mjs"
   }
 }

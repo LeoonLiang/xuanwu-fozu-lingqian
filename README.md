@@ -19,13 +19,36 @@ const items = await Promise.all(
   index.files.map(f => fetch(base + f).then(r => r.json()))
 );
 console.log(index.count, items.length); // 51, 51
+
+const liteItems = await Promise.all(
+  index.lite.files.map(f => fetch(base + f).then(r => r.json()))
+);
+console.log(index.lite.count, liteItems.length); // 51, 51
+
+// 串联：从简约版跳转详情
+function toFullPath(litePath) {
+  return litePath.replace("data-lite", "data");
+}
+// 或使用映射表
+const idTo = new Map(index.map.map(m => [m.id, m]));
+const detail01 = await fetch(base + idTo.get("01").full).then(r => r.json());
+
+// 直接获取简约版聚合
+const allLite = await fetch(base + "data-lite/all.json").then(r => r.json());
+console.log(allLite.length); // 51
 ```
 - 可选：GitHub Pages
   - 若开启 Pages，将根目录公开后，也可通过 `https://LeoonLiang.github.io/xuanwu-fozu-lingqian/index.json` 读取
 
 ## 目录结构
-- `data/`：51 个签的 JSON（`01.json`–`51.json`）
+- `data/`：完整版 51 个签的 JSON（`01.json`–`51.json`）
+- `data-lite/`：简约版 51 个签（仅五项：签号、签名、签文类型、卦象、生肖）
 - `index.json`：数据入口与清单（包含 `files` 路径、`count`、`version`）
+  - 统一索引：`index.json` 同时包含：
+    - `files`：完整版文件列表
+    - `lite.files`：简约版文件列表
+    - `map`：按编号映射 `full` 与 `lite` 路径，便于串联请求
+ - `data-lite/all.json`：简约版聚合文件，一次性获取 51 条简约数据
 - `schema.json`：字段结构的参考规范（JSON Schema，允许增量字段）
 - `scripts/validate.mjs`：轻量数据校验脚本（存在性与关键块检查）
 - `package.json`：运行脚本配置

@@ -1,0 +1,10 @@
+{
+  "name": "xuanwu-fozu-lingqian",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "玄武山佛祖灵签数据集（51签，每签一个 JSON）",
+  "scripts": {
+    "validate": "node scripts/validate.mjs"
+  }
+}

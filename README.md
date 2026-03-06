@@ -1,5 +1,7 @@
 # 玄武山佛祖灵签（数据集）
 
+[**在线预览 / Online Demo**](https://leoonliang.github.io/fozhu-lingqian-web/)
+
 51 签数据集，每签一个 JSON 文件。面向开源使用场景，提供统一索引、基础结构规范与校验脚本，便于第三方系统直接消费。
 
 ## 获取方式

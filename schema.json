@@ -103,7 +103,7 @@
       "type": "object",
       "additionalProperties": true,
       "properties": {
-        "诗": { "type": "string" },
+        "签文": { "type": "string" },
         "解曰": { "type": "string" }
       }
     },
@@ -111,7 +111,7 @@
       "type": "object",
       "additionalProperties": true,
       "properties": {
-        "婚姻": { "type": "string" },
+        "签文": { "type": "string" },
         "解曰": { "type": "string" }
       }
     },
@@ -119,7 +119,7 @@
       "type": "object",
       "additionalProperties": true,
       "properties": {
-        "官讼": { "type": "string" },
+        "签文": { "type": "string" },
         "解曰": { "type": "string" }
       }
     },
@@ -127,7 +127,7 @@
       "type": "object",
       "additionalProperties": true,
       "properties": {
-        "失物": { "type": "string" },
+        "签文": { "type": "string" },
         "解曰": { "type": "string" }
       }
     },
@@ -135,7 +135,7 @@
       "type": "object",
       "additionalProperties": true,
       "properties": {
-        "占病": { "type": "string" },
+        "签文": { "type": "string" },
         "解曰": { "type": "string" }
       }
     },

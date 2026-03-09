@@ -52,23 +52,23 @@ export interface FortuneStick {
     移徙: string;
   };
   行人: {
-    诗: string;
+    签文: string;
     解曰: string;
   };
   婚姻: {
-    婚姻: string;
+    签文: string;
     解曰: string;
   };
   官讼: {
-    官讼: string;
+    签文: string;
     解曰: string;
   };
   失物: {
-    诗: string;
+    签文: string;
     解曰: string;
   };
   占病: {
-    占病: string;
+    签文: string;
     解曰: string;
   };
   其他?: {
